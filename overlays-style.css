@@ -19,7 +19,7 @@
     height: fit-content;
     max-width: 95%;
     max-height: 95%;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 50px;
     margin-left: 10%;
     margin-right: 10%;
@@ -49,15 +49,35 @@
     flex-direction: column;
   }
   @media (min-width: 767px) { 
-    #addItemForm
+  #addItemForm
   {
     margin-top: 35px;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 30px;}
+
+    .overlay-content {
+      background-color: #FCF4DD;
+      padding: 20px;
+      border-radius: 10px;
+      width: fit-content;
+      height: fit-content;
+      max-width: 95%;
+      max-height: 95%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 25%;
+      margin-right: 25%;
+      overflow:auto;
+  
+      display: flex;
+      flex-direction: column;
+      
+      
+    }
   }
     
-  }
+  
   input
 {
     width:250px ;
