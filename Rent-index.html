@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Space</title>
+    <link rel="stylesheet" href="Rent-style.css">
+    <link rel="stylesheet" href="style-sidebar.css">
+    <link rel="stylesheet" href="overlays-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="menu_icon">
+            <img src="./pictures/63mjbjxr.png" alt="">
+        </div>
+        <div class="nav_img">
+            <img src="./pictures/LOGO2.png" alt="">
+        </div>
+        <div> 
+            <ul>
+                <li id="home">Home</li>
+                <li id="rent">Rent-space</li>
+                <li id="serv">Services</li>
+                <li id="contact">Contact</li>
+                <button id="Htos">Sign-in</button>
+            </ul>
+        </div>
+        <div class="options_icon">
+            <img class="menu-button-img" src="./pictures/w8nqatdq.png" alt="">
+        </div>
+    </nav>
+    <section class="side-bar">
+        <div class="goback">
+            <img class="backup" src="./pictures/back.png" alt="">
+        </div>
+        <div>
+            <h1>Rentable!</h1><br>
+            <p>Here you can find more than you expected.</p>
+            <p>Feel free to check the rent-space!</p>
+        </div>
+        <ul>
+            <li><img src="./pictures/house.png" alt=""><a href="Home-index.html">Home</a></li>
+            <li><img src="./pictures/rent-space.png" alt=""><a href="Rent-index.html">Rent-space</a></li>
+            <li><img src="./pictures/services.png" alt=""><a href="services.html">Services</a></li>
+            <li><img src="./pictures/contact.png" alt=""><a href="form-index.html">Contact</a></li>
+            <li><img src="./pictures/sign-in.png" alt=""><a href="sign-index.html">Sign-in</a></li>
+        </ul>
+        <div class="Copyrights">
+            <p>© Copyrights 2024</p>
+        </div>
+    </section>
+      <div class="item-overlay">
+        <!-- information about items in overlays -->
+      </div>
+      <div class="payment-overlay">
+        <!-- open overlay to pay -->
+      </div>
+      <div class="additem-overlay overlay">
+        <div class="overlay-content">
+          
+          <div class="headover">
+            <h2>Add Item</h2>
+            <img src="./pictures/cross.png" onclick="closeOverlay()">
+          </div>
+         
+           <form id="addItemForm">
+
+            <div class="left">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Name"><br>
+                
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" required placeholder="Price"><br>
+                
+                <label for="place">Place:</label>
+                <input type="text" id="place" name="place" required placeholder="Place"> <br>
+
+                
+
+                <label for="file">Add File (image only):</label>
+                <br>
+                <input type="file" id="file" name="file" accept="image/*" required><br>
+            </div>
+            
+            <div class="right">
+
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="homes">Homes</option>
+                    <option value="cars">Cars</option>
+                    <option value="bikes">Bikes</option>
+                    <option value="games">Games</option>
+                    <option value="books">Books</option>
+                    <option value="others">Others</option>
+                </select>
+                <br>
+                <label for="short-description">Short Description:</label>
+                <input type="text" id="short-description" name="short-description" required placeholder="Short Description"><br>
+                
+                <label for="full-description">Full Description:</label>
+                <textarea id="full-description" name="full-description" required placeholder="Full Description"></textarea><br>
+                
+                
+                
+                
+            </div>
+            
+            
+          </form>
+          <button type="submit" value="Add" id="add-item-button">Add</button>
+        </div>
+      </div>
+
+    <section class="rental">
+        <div class="rent-space">
+            <div class="sidebox">
+                <div class="box"> <img src="./pictures/home.png"></div>
+                <div class="box"> <img src="./pictures/car.png"></div>
+                <div class="box"> <img src="./pictures/bike.png"></div>
+                <div class="box"> <img src="./pictures/game.png"></div>
+                <div class="box"> <img src="./pictures/learn.png"></div>
+                <div class="box"> <img src="./pictures/dots.png"></div>
+                
+              </div>
+    
+               <div class="page">
+                 <button id="additem">Add item</button>
+                 <div class="item-container">
+
+                    <div class="item">
+                        <div class="img-cont">
+                            <img src="./pictures/carpic.png">
+                        </div>
+                        <div class="info">
+                            <div class="main-info">
+                                <h3>Maruti</h3>
+                                <h3>20$/hr</h3>
+                            </div>
+                            <div class="Description">
+                                <p>Very good car, barely used. Honest price.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-cont">
+                            <img src="./pictures/carpic.png">
+                        </div>
+                        <div class="info">
+                            <div class="main-info">
+                                <h3>Maruti</h3>
+                                <h3>20$/hr</h3>
+                            </div>
+                            <div class="Description">
+                                <p>Very good car, barely used. Honest price.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-cont">
+                            <img src="./pictures/carpic.png">
+                        </div>
+                        <div class="info">
+                            <div class="main-info">
+                                <h3>Maruti</h3>
+                                <h3>20$/hr</h3>
+                            </div>
+                            <div class="Description">
+                                <p>Very good car, barely used. Honest price.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-cont">
+                            <img src="./pictures/carpic.png">
+                        </div>
+                        <div class="info">
+                            <div class="main-info">
+                                <h3>Maruti</h3>
+                                <h3>20$/hr</h3>
+                            </div>
+                            <div class="Description">
+                                <p>Very good car, barely used. Honest price.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-cont">
+                            <img src="./pictures/carpic.png">
+                        </div>
+                        <div class="info">
+                            <div class="main-info">
+                                <h3>Maruti</h3>
+                                <h3>20$/hr</h3>
+                            </div>
+                            <div class="Description">
+                                <p>Very good car, barely used. Honest price.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-cont">
+                            <img src="./pictures/carpic.png">
+                        </div>
+                        <div class="info">
+                            <div class="main-info">
+                                <h3>Maruti</h3>
+                                <h3>20$/hr</h3>
+                            </div>
+                            <div class="Description">
+                                <p>Very good car, barely used. Honest price.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-cont">
+                            <img src="./pictures/carpic.png">
+                        </div>
+                        <div class="info">
+                            <div class="main-info">
+                                <h3>Maruti</h3>
+                                <h3>20$/hr</h3>
+                            </div>
+                            <div class="Description">
+                                <p>Very good car, barely used. Honest price.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-cont">
+                            <img src="./pictures/carpic.png">
+                        </div>
+                        <div class="info">
+                            <div class="main-info">
+                                <h3>Maruti</h3>
+                                <h3>20$/hr</h3>
+                            </div>
+                            <div class="Description">
+                                <p>Very good car, barely used. Honest price.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                   
+                    
+                 
+                   </div>
+              </div>
+          </div>
+    </section>
+   
+    
+    <footer>
+        <p>© Copyrights 2024 - All rights reserved</p>
+    </footer>
+    
+    <script src="Home-script.js"></script>
+    <script src="home.js"></script>
+    <script src="overlays.js"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+*{ 
+  margin: 0px; 
+  padding: 0px; 
+} 
+body {
+  font-family: 'Inconsolata';
+  padding: 0px;
+  margin: 0px;
+  
+}
+nav{
+  box-shadow: 0 10px 10px -1px rgba(202, 202, 202, 0.199);
+  background-color: white;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+}
+.nav_img{
+  margin-left: 10%;
+}
+nav img{
+height: 40px;
+margin: 10px;
+cursor: pointer;
+height: 30px;
+}
+nav ul{
+  display: none;
+}
+
+/* ########## nav css is done ############ */
+
+.search_bar .P1{
+  margin-top: 20px;
+  font-size: 30px;
+}
+.search_bar .P2{
+font-size: 20px;
+color: #787878;
+}
+.search_bar .logo3{
+    width: 250px;
+}
+.search_bar form{
+  background-image: repeating-linear-gradient(-3deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(87deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(177deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(267deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px);
+  background-size: 1px 100%, 100% 1px, 1px 100% , 100% 1px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  background-color: #FCF4DD;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.search_bar form input{
+  width: 100%;
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 20px 15px;
+}
+.search_bar form button{
+  margin: 0 10% 10% 10%;
+  border: none;
+  border-radius: 20px;
+  background-color: #FDD500;
+  padding: 10px ;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.dynamic{
+  width: 100%;
+}
+
+/* ########## search css is done ############ */
+
+.side-bar{
+  padding:5px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: -100%;
+  height: 100vh;
+  border: 1px solid #c28e00;
+  background-color: #FDD500;
+  width: 50%;
+  transition: 0.3s ease;
+}
+.side-bar.active{ 
+  left: 0;
+} 
+.side-bar .goback{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.side-bar .backup{
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.411);
+  box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+.side-bar .backup:hover{
+  background-color: rgba(255, 255, 255, 0.705);
+}
+.side-bar div p{
+  font-size: 20px;
+}
+.side-bar ul{
+  width: 100%;
+  font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    list-style: none;
+    margin-bottom: 25vh;
+}
+.side-bar ul li{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 50px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.side-bar ul li:hover{
+  background-color: #c28e00;
+}
+.side-bar ul li a{
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+.side-bar img{
+  width: 30px;
+  border-radius: 100%;
+}
+
+/* ########## side-bar css is done ############ */
+
+@media (min-width: 767px) { 
+   .options_icon{
+        display: none;
+    }
+    .menu_icon{
+      display: none;
+    }
+    .nav_img{
+        margin: 10px;
+    }
+    nav ul{
+        font-weight: 600;
+        font-size: large;
+        list-style: none; 
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding-right: 50px;
+        margin-top: 25px;
+        gap: 100px;
+    }
+    nav ul li a{
+      text-decoration: none;
+      color: black;
+    }
+    nav ul li a:hover{
+      border-bottom: 1px solid #FDD500;
+    }
+    .options_icon{
+      display: none;
+  }
+  .menu_icon{
+    display: none;
+  }
+  .nav_img{
+      margin: 10px;
+      cursor: pointer;
+      width: 20px;
+  }
+  
+  nav ul{
+      font-weight: 600;
+      font-size: large;
+      list-style: none; 
+      text-decoration: none;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      padding-right: 50px;
+      margin-top: 25px;
+      gap: 70px;
+      cursor: pointer;
+  }
+  li:hover{
+    border-bottom: 2px solid #FDD500;
+}
+  nav button{
+     font-family: 'Inconsolata';
+      font-size: 15px;
+      border: none;
+      border-radius: 20px;
+      font-weight: 600;
+      background-color: #FDD500;
+      padding: 7px 20px 7px 20px;
+      letter-spacing: 1px;
+      cursor: pointer;
+
+  }
+  nav button:hover
+  {
+    background-color: #F2E8C9;
+  }
+    .search_bar{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .search_bar .P1{
+      margin-top: 20px;
+      font-size: 30px;
+  }
+  .search_bar .P2{
+    font-size: 20px;
+    color: #787878;
+}
+    .search_bar .logo3{
+        width: 250px;
+    }
+    .search_bar form{
+      background-image: repeating-linear-gradient(-3deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(87deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(177deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(267deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px);
+      background-size: 1px 100%, 100% 1px, 1px 100% , 100% 1px;
+      background-position: 0 0, 0 0, 100% 0, 0 100%;
+      background-repeat: no-repeat;
+      background-color: #FCF4DD;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .search_bar form input{
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+        margin: 20px auto auto 20px;
+    }
+    .search_bar form button{
+        margin: auto 5% 10px 65% ;
+        border: none;
+        border-radius: 20px;
+        background-color: #FDD500;
+        padding: 10px 25px;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    .search_bar form button:hover
+{
+  background-color: #F2E8C9;
+}
+    .safety h1{
+      font-size: 40px;
+    }
+.part1
+{
+  margin-top: 25px;
+  width: 1100px;
+  background-color: transparent;
+ 
+}
+.part2
+{
+  margin-top: 50px;
+  width: 1100px;
+  background-color: transparent;
+
+}
+.part3
+{
+  margin-top: 230px;
+  width: 1100px;
+  
+  background-color: transparent;
+
+}
+.part4
+{
+  margin-top: 170px;
+  width: 1100px;
+  background-color: transparent;
+ 
+}
+  } 
+
+/* ########## media css is done ############ */
+
+  .background{
+    height: auto;
+    padding: 100px;
+    background-image: url(./pictures/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    overflow: hidden;
+  }
+  .safety{
+    margin-top: 10px;
+  }
+  .safety h1{
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .discription_blocks{
+    margin-top: 50px;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  .discription_blocks div{
+    background-color: #FFDE7873;
+    background-image: repeating-linear-gradient(-3deg, #333333, #333333 21px, transparent 21px, transparent 32px, #333333 32px), repeating-linear-gradient(87deg, #333333, #333333 21px, transparent 21px, transparent 32px, #333333 32px), repeating-linear-gradient(177deg, #333333, #333333 21px, transparent 21px, transparent 32px, #333333 32px), repeating-linear-gradient(267deg, #333333, #333333 21px, transparent 21px, transparent 32px, #333333 32px);
+    background-size: 1px 100%, 100% 1px, 1px 100% , 100% 1px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
+    padding: 30px;
+  }
+
+  /* /* ############# safety css is done ###############"" */
+
+  .feedbacks{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin: 100px 0;
+  }
+  .feedbacks img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #FFDE7873;
+  }
+  .feedbacks .img{
+    display: none;
+  }
+  .comment{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .info{
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-items: center;
+  }
+  .cmnt{
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  /* ################ feedbacks css is done ###############"" */
+
+  .links{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+  }
+  .links div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links div h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .links ul{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    list-style: none;
+    gap: 20px;
+  }
+  .links ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .links ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  .links ul li a:hover{
+    border-bottom: 1px solid #FDD500;
+  }
+  .links ul img{
+    width: 40px;
+    border-radius: 100%;
+  }
+
+/* ########## links css is done ############ */
+
+footer{
+  height: 70px;
+  background-color:#FDD500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0%;
+}
