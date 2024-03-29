@@ -34,72 +34,7 @@ nav ul{
 
 
 /* ########## nav css is done ############ */
-.side-bar{
-  padding:5px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  left: -100%;
-  height: 100vh;
-  border: 1px solid #c28e00;
-  background-color: #FDD500;
-  width: 50%;
-  transition: 0.3s ease;
-}
-.side-bar.active{ 
-  left: 0;
-} 
-.side-bar .goback{
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-.side-bar .backup{
-  border-radius: 100%;
-  background-color: rgba(255, 255, 255, 0.411);
-  box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.1);
-  transition: 0.5s ease;
-}
-.side-bar .backup:hover{
-  background-color: rgba(255, 255, 255, 0.705);
-}
-.side-bar div p{
-  font-size: 20px;
-}
-.side-bar ul{
-  width: 100%;
-  font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    list-style: none;
-    margin-bottom: 25vh;
-}
-.side-bar ul li{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 50px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-.side-bar ul li:hover{
-  background-color: #c28e00;
-}
-.side-bar ul li a{
-  margin-left: 10px;
-  text-decoration: none;
-  color: black;
-}
-.side-bar img{
-  width: 30px;
-  border-radius: 100%;
-}
 
-/* ########## side-bar css is done ############ */
 
 .main-box{
 display: flex;
