@@ -65,13 +65,18 @@ color: #787878;
   margin: 20px 15px;
 }
 .search_bar form button{
-  margin: 0 10% 10% 10%;
+  align-self: flex-end;
+  margin-right: 15px;
   border: none;
   border-radius: 20px;
   background-color: #FDD500;
-  padding: 10px ;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
   letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .dynamic{
   width: 100%;
@@ -301,20 +306,28 @@ margin-bottom: 0%;
         margin-top: 50px;
     }
     .search_bar form input{
-        font-size: 20px;
+        font-size: 17px;
         background-color: transparent;
         border: none;
         margin: 20px auto auto 20px;
     }
     .search_bar form button{
-        margin: auto 5% 10px 65% ;
-        border: none;
-        border-radius: 20px;
-        background-color: #FDD500;
-        padding: 10px 25px;
-        letter-spacing: 1px;
-        font-size: 20px;
-    }
+    
+
+          align-self: flex-end;
+          margin: 0 15px 15px 15px;
+          border: none;
+          border-radius: 20px;
+          background-color: #FDD500;
+          padding-right: 20px;
+          padding-left: 20px;
+          padding-top: 7px;
+          padding-bottom: 7px;
+        
+          letter-spacing: 1px;
+          font-size: 15px;
+        }
+    
     .search_bar form button:hover
 {
   background-color: #F2E8C9;
