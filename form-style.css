@@ -73,7 +73,7 @@ nav ul{
 .Large
 { 
   
-  margin-top: 110px;
+  padding-top: 100px;
   
   display: flex;
   flex-direction: column-reverse;

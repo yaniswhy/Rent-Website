@@ -199,6 +199,7 @@ nav button:hover
 {
   background-color: #F2E8C9;
 }
+
   } 
 
 /* ########## media css is done ############ */
@@ -210,7 +211,7 @@ nav button:hover
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
-    overflow: hidden;
+    
   }
   
   footer{
