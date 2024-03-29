@@ -11,7 +11,9 @@
   background-color: #FDD500;
   width: 50%;
   transition: 0.3s ease;
+  gap: 45px;
 }
+
 
 .side-bar.active { 
   left: 0;
