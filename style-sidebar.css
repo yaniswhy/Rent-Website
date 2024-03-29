@@ -21,14 +21,10 @@
     justify-content: flex-end;
   }
   .side-bar .backup{
-    border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.411);
-    box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.1);
+    width: 20px;
     transition: 0.5s ease;
   }
-  .side-bar .backup:hover{
-    background-color: rgba(255, 255, 255, 0.705);
-  }
+
   .side-bar div p{
     font-size: 20px;
   }
