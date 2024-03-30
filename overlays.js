@@ -6,22 +6,17 @@ document.getElementById("additem").addEventListener("click", function() {
     document.querySelector(".additem-overlay.overlay").style.display = "none";
   }
   
-// -------------------
-
 
 document.getElementById('add-item-button').addEventListener('click', function(event) {
     event.preventDefault(); 
 
-    // Get input values
+
     var name = document.getElementById('name').value;
     var price = document.getElementById('price').value;
     
     var file = document.getElementById('file').files[0];
     var shortDescription = document.getElementById('short-description').value;
     
-    
-
-    // Create item element
     var itemDiv = document.createElement('div');
     itemDiv.classList.add('item');
 
@@ -55,10 +50,9 @@ document.getElementById('add-item-button').addEventListener('click', function(ev
     itemDiv.appendChild(imgContDiv);
     itemDiv.appendChild(infoDiv);
 
-    // Append item to the item container
+   
     document.querySelector('.item-container').appendChild(itemDiv);
 
-    // Clear input fields
     document.getElementById('name').value = '';
     document.getElementById('price').value = '';
     document.getElementById('place').value = '';
@@ -66,6 +60,6 @@ document.getElementById('add-item-button').addEventListener('click', function(ev
     document.getElementById('short-description').value = '';
     document.getElementById('full-description').value = '';
 
-    // Close the overlay
+ 
     closeOverlay();
 });

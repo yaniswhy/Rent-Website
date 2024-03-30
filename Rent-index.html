@@ -53,9 +53,20 @@
         </div>
     </section>
     
-      <div class="item-overlay">
-        <!-- information about items in overlays -->
-      </div>
+      
+    <div class="custom-overlay" id="itemOverlay">
+        <div class="custom-overlay-content">
+            <div class="custom-headover">
+                <h2></h2>
+                <img src="./pictures/cross.png" onclick="closeItemOverlay()" alt="Close">
+            </div>
+            <div class="custom-item-details">
+                <!-- Item details will be filled dynamically by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+      
       <div class="payment-overlay">
         <!-- open overlay to pay -->
       </div>
@@ -71,13 +82,13 @@
 
             <div class="left">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Name"><br>
+                <input type="text" id="name" name="name"  placeholder="Name" required><br>
                 
                 <label for="price">Price:</label>
-                <input type="text" id="price" name="price" required placeholder="Price"><br>
+                <input type="text" id="price" name="price"  placeholder="Price" required><br>
                 
                 <label for="place">Place:</label>
-                <input type="text" id="place" name="place" required placeholder="Place"> <br>
+                <input type="text" id="place" name="place" placeholder="Place" required> <br>
 
                 
 
@@ -89,7 +100,7 @@
             <div class="right">
 
                 <label for="category">Category:</label>
-                <select id="category" name="category">
+                <select id="category" name="category" required>
                     <option value="homes">Homes</option>
                     <option value="cars">Cars</option>
                     <option value="bikes">Bikes</option>
@@ -99,10 +110,10 @@
                 </select>
                 <br>
                 <label for="short-description">Short Description:</label>
-                <input type="text" id="short-description" name="short-description" required placeholder="Short Description"><br>
+                <input type="text" id="short-description" name="short-description" placeholder="Short Description" required><br>
                 
                 <label for="full-description">Full Description:</label>
-                <textarea id="full-description" name="full-description" required placeholder="Full Description"></textarea><br>
+                <textarea id="full-description" name="full-description"placeholder="Full Description"  required ></textarea><br>
                 
                 
                 
