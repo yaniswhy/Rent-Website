@@ -7,14 +7,16 @@ document.getElementById("additem").addEventListener("click", function() {
   }
   
 
-document.getElementById('add-item-button').addEventListener('click', function(event) {
+    document.getElementById('add-item-button').addEventListener('click', function(event) {
     event.preventDefault(); 
 
 
     var name = document.getElementById('name').value;
     var price = document.getElementById('price').value;
 
-    var category = document.getElementById('category2').value;
+    var category2 = document.getElementById('category2').value;
+
+    var category = document.getElementById('category').value;
     
     var file = document.getElementById('file').files[0];
     var shortDescription = document.getElementById('short-description').value;
@@ -39,22 +41,15 @@ document.getElementById('add-item-button').addEventListener('click', function(ev
 
     if (category === 'Hourly') {
       priceHeading.textContent = price + 'Da/hr';
-      mainInfoDiv.appendChild(nameHeading);
-      mainInfoDiv.appendChild(priceHeading);
-  
     } 
-     if (category === 'Daily') {
+     if (category2 === 'Daily') {
       priceHeading.textContent = price + 'Da/dy';
-      mainInfoDiv.appendChild(nameHeading);
-      mainInfoDiv.appendChild(priceHeading);
-  
     }
-     if (category === 'Weekly') {
+     if (category2 === 'Weekly') {
       priceHeading.textContent = price + 'Da/wk';
-      mainInfoDiv.appendChild(nameHeading);
-      mainInfoDiv.appendChild(priceHeading);
-  
     }
+    mainInfoDiv.appendChild(nameHeading);
+    mainInfoDiv.appendChild(priceHeading);
 
    
     var descriptionDiv = document.createElement('div');
