@@ -13,6 +13,8 @@ document.getElementById('add-item-button').addEventListener('click', function(ev
 
     var name = document.getElementById('name').value;
     var price = document.getElementById('price').value;
+
+    var category = document.getElementById('category2').value;
     
     var file = document.getElementById('file').files[0];
     var shortDescription = document.getElementById('short-description').value;
@@ -34,10 +36,27 @@ document.getElementById('add-item-button').addEventListener('click', function(ev
     var nameHeading = document.createElement('h3');
     nameHeading.textContent = name;
     var priceHeading = document.createElement('h3');
-    priceHeading.textContent = price + '$/hr'; 
-    mainInfoDiv.appendChild(nameHeading);
-    mainInfoDiv.appendChild(priceHeading);
 
+    if (category === 'Hourly') {
+      priceHeading.textContent = price + 'Da/hr';
+      mainInfoDiv.appendChild(nameHeading);
+      mainInfoDiv.appendChild(priceHeading);
+  
+    } 
+     if (category === 'Daily') {
+      priceHeading.textContent = price + 'Da/dy';
+      mainInfoDiv.appendChild(nameHeading);
+      mainInfoDiv.appendChild(priceHeading);
+  
+    }
+     if (category === 'Weekly') {
+      priceHeading.textContent = price + 'Da/wk';
+      mainInfoDiv.appendChild(nameHeading);
+      mainInfoDiv.appendChild(priceHeading);
+  
+    }
+
+   
     var descriptionDiv = document.createElement('div');
     descriptionDiv.classList.add('Description');
     var descriptionParagraph = document.createElement('p');
@@ -63,3 +82,4 @@ document.getElementById('add-item-button').addEventListener('click', function(ev
  
     closeOverlay();
 });
+

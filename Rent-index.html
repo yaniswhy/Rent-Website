@@ -55,15 +55,7 @@
     
       
     <div class="custom-overlay" id="itemOverlay">
-        <div class="custom-overlay-content">
-            <div class="custom-headover">
-                <h2></h2>
-                <img src="./pictures/cross.png" onclick="closeItemOverlay()" alt="Close">
-            </div>
-            <div class="custom-item-details">
-                <!-- Item details will be filled dynamically by JavaScript -->
-            </div>
-        </div>
+        
     </div>
     
       
@@ -82,13 +74,26 @@
 
             <div class="left">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name"  placeholder="Name" required><br>
+                <input type="text" id="name" name="name"  placeholder="Item's name" required><br>
                 
-                <label for="price">Price:</label>
-                <input type="text" id="price" name="price"  placeholder="Price" required><br>
+                <div class="pricing">
+                    <div> <label for="price">Price:</label>
+                        <input class="price" type="number" id="price" name="price"  placeholder="Price in Algerian dinar" required><br>
+                        </div>
+                        <div>
+                    <label for="category">Category:</label>
+                    <select id="category2" name="category" required>
+                    <option value="Hourly">Hourly</option>
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
+                </select>
+                        </div>
+                   
+                </div>
+                
                 
                 <label for="place">Place:</label>
-                <input type="text" id="place" name="place" placeholder="Place" required> <br>
+                <input type="text" id="place" name="place" placeholder="City, street" required> <br>
 
                 
 
@@ -110,13 +115,10 @@
                 </select>
                 <br>
                 <label for="short-description">Short Description:</label>
-                <input type="text" id="short-description" name="short-description" placeholder="Short Description" required><br>
+                <input type="text" id="short-description" name="short-description" placeholder="Be precise and concise" required><br>
                 
                 <label for="full-description">Full Description:</label>
-                <textarea id="full-description" name="full-description"placeholder="Full Description"  required ></textarea><br>
-                
-                
-                
+                <textarea id="full-description" name="full-description"placeholder="Full Description, detailed"  required ></textarea><br>
                 
             </div>
             
