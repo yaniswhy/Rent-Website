@@ -167,7 +167,7 @@ footer{
    flex-direction: row;
    gap: 140px;
   }
-  @media (min-width: 767px) { 
+  @media (min-width: 1267px) { 
     .options_icon{
          display: none;
      }
@@ -311,7 +311,6 @@ footer{
      margin-right: 70px;
      margin-bottom: 75px;
 
-     
  
    }
    .item-container
