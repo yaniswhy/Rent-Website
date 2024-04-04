@@ -9,7 +9,7 @@ if (menubtn[0]) {
     menubtn[0].addEventListener("click",function()
     {
         menulinks[0].classList.toggle("active")
-        console.log("Something is wrong!");
+        
     })
     
 } else {
@@ -21,7 +21,7 @@ if (backupbtn[0]) {
     backupbtn[0].addEventListener("click",function()
     {
         menulinks[0].classList.toggle("active")
-        console.log("Something is wrong!");
+       
     })
     
 } else {
