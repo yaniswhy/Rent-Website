@@ -472,6 +472,13 @@ gap: 10px;
    flex-direction: column;
    gap: 10px;
 }
+.special-overlay.active .main-info
+{
+padding-bottom: 10px;
+display: flex;
+flex-direction: row;
+gap: 10px;
+}
 .special-overlay2.active {
 
   position: fixed;
