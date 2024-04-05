@@ -188,7 +188,59 @@ footer{
   display: flex;
    flex-direction: column;
 }
-  @media (min-width: 1267px) { 
+
+.special-overlay
+{
+  display: none;
+}
+
+.special-overlay.active
+{
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #FCF4DD;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100vw;
+    height: 100vh;
+    overflow:auto;
+    
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  box-sizing: border-box;
+ 
+}
+.special-overlay.active .Description
+{
+padding-bottom: 30px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.special-overlay.active .main-info
+{
+padding-bottom: 10px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.special-overlay2.active {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+  @media (min-width: 1067px) { 
     .options_icon{
          display: none;
      }
@@ -394,10 +446,12 @@ footer{
    {
     display: block;
     position: absolute;
-     top: 20%;
+     top: 17%;
      left: 25%;
      width: 50%;
-     
+     height: auto;
+     margin: 0;
+     padding: 0;
      background-color: #fff1ce;
      
      border-radius: 10px;
