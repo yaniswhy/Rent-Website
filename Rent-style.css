@@ -257,21 +257,21 @@ gap: 10px;
 .special-overlay.active .cat
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 10px;
     background-color: #F2E8C9;
     border: none;
-    gap: 5px;
+    gap: 10px;
     padding: 15px;
 }
 .special-overlay.active .place
 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
    border-radius: 10px;
     background-color: #F2E8C9;
     border: none;
-    gap: 5px;
+    gap: 10px;
     padding: 15px;
 }
 .special-overlay.active .price
@@ -553,18 +553,23 @@ gap: 20px;
   
 }
 .special-overlay.active .cat
-{   
+{
+    display: flex;
+    flex-direction: row;
     border-radius: 10px;
     background-color: #F2E8C9;
     border: none;
+    gap: 10px;
     padding: 15px;
 }
 .special-overlay.active .place
 {
-  
-    border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+   border-radius: 10px;
     background-color: #F2E8C9;
     border: none;
+    gap: 10px;
     padding: 15px;
 }
 .special-overlay.active .price
