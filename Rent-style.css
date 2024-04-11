@@ -219,8 +219,7 @@ footer{
 padding-bottom: 30px;
 display: flex;
 flex-direction: column;
-gap: 10px;
-
+gap: 20px;
 border-radius: 10px;
 background-color: #F2E8C9;
 border: none;
@@ -232,7 +231,7 @@ padding: 15px;
 padding-bottom: 10px;
 display: flex;
 flex-direction: column;
-gap: 10px;
+gap: 15px;
 }
 
 .special-overlay2.active {
