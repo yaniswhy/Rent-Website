@@ -51,7 +51,7 @@ color: #787878;
   background-position: 0 0, 0 0, 100% 0, 0 100%;
   background-repeat: no-repeat;
   background-color: #FCF4DD;
-    height: 120px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -62,11 +62,11 @@ color: #787878;
   background-color: transparent;
   border: none;
   outline: none;
-  margin: 20px 15px;
+  margin: 15px 15px;
 }
 .search_bar form button{
   align-self: flex-end;
-  margin-top: 15px;
+  
   margin-right: 15px;
   border: none;
   border-radius: 20px;
@@ -286,28 +286,29 @@ background-color: #F2E8C9;
         grid-template-columns: 60% 40%;
     }
     .search_bar .P1{
-      margin-top: 70px;
+      margin-top: 20px;
       font-size: 30px;
   }
   .search_bar .P2{
     font-size: 20px;
     color: #787878;
 }
-    .search_bar .logo3{
-      display: none;
-        
-    }
+  
     .search_bar form{
       background-image: repeating-linear-gradient(-3deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(87deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(177deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(267deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px);
       background-size: 1px 100%, 100% 1px, 1px 100% , 100% 1px;
       background-position: 0 0, 0 0, 100% 0, 0 100%;
       background-repeat: no-repeat;
       background-color: #FCF4DD;
-        height: 120px;
+        height: 80px;
         display: flex;
         flex-direction: column;
         margin-top: 50px;
     }
+    .search_bar .logo3{
+      display: block;
+      margin-top: 30px;
+  }
     .search_bar form input{
         font-size: 17px;
         background-color: transparent;
