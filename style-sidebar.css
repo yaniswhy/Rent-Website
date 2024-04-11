@@ -1,11 +1,11 @@
 .side-bar {
   padding: 5px;
-  position: fixed; /* Changed to fixed */
+  position: fixed; 
   display: flex;
   flex-direction: column;
   align-items: center;
   left: -100%;
-  top: 0; /* Added top: 0 to stick to the top of the viewport */
+  top: 0; 
   height: 100vh;
   border: 1px solid #c28e00;
   background-color: #FDD500;

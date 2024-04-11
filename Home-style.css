@@ -140,6 +140,7 @@ color: #787878;
   flex-direction: column;
   gap: 15px;
   width: 100%;
+  
 }
 .info{
   display: grid;
@@ -208,61 +209,61 @@ margin-bottom: 0%;
 }
 
 @media (min-width: 767px) { 
-   .options_icon{
-        display: none;
-    }
-    .menu_icon{
-      display: none;
-    }
-    .nav_img{
-        margin: 10px;
-    }
-    nav ul{
-        font-weight: 600;
-        font-size: large;
-        list-style: none; 
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        padding-right: 50px;
-        margin-top: 25px;
-        gap: 100px;
-    }
-    nav ul li a{
-      text-decoration: none;
-      color: black;
-    }
-    nav ul li a:hover{
-      border-bottom: 1px solid #FDD500;
-    }
-    .options_icon{
-      display: none;
-  }
-  .menu_icon{
+  .options_icon{
     display: none;
-  }
-  .nav_img{
-      margin: 10px;
-      cursor: pointer;
-      width: 20px;
-  }
-  
-  nav ul{
-      font-weight: 600;
-      font-size: large;
-      list-style: none; 
-      text-decoration: none;
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      padding-right: 50px;
-      margin-top: 25px;
-      gap: 70px;
-      cursor: pointer;
-  }
-  li:hover{
-    border-bottom: 2px solid #FDD500;
+}
+.menu_icon{
+  display: none;
+}
+.nav_img{
+    margin: 10px;
+}
+nav ul li{
+ font-family: 'Inconsolata';
+ font-size: 15px;
+ border: none;
+ border-radius: 20px;
+ font-weight: 600;
+ 
+ padding: 7px 20px 7px 20px;
+ letter-spacing: 1px;
+ cursor: pointer;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover{
+  border-bottom: 1px solid #FDD500;
+}
+.options_icon{
+  display: none;
+}
+.menu_icon{
+display: none;
+}
+.nav_img{
+  margin: 10px;
+  cursor: pointer;
+  width: 20px;
+}
+
+nav ul{
+  font-weight: 600;
+  font-size: large;
+  list-style: none; 
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding-right: 50px;
+  margin-top: 25px;
+  gap: 30px;
+  cursor: pointer;
+
+}
+li:hover{
+background-color: #F2E8C9;
 }
   nav button{
      font-family: 'Inconsolata';
@@ -293,7 +294,8 @@ margin-bottom: 0%;
     color: #787878;
 }
     .search_bar .logo3{
-        display: none;
+      display: none;
+        
     }
     .search_bar form{
       background-image: repeating-linear-gradient(-3deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(87deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(177deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px), repeating-linear-gradient(267deg, #333333, #333333 14px, transparent 14px, transparent 25px, #333333 25px);

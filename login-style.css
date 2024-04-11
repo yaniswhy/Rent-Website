@@ -194,28 +194,60 @@ button:hover
 
 @media (min-width: 767px) { 
   .options_icon{
-      display: none;
-  }
-  .nav_img{
-      margin: 10px;
-      cursor: pointer;
-      width: 20px;
-  }
-  nav ul{
-      font-weight: 600;
-      font-size: large;
-      list-style: none; 
-      text-decoration: none;
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      padding-right: 50px;
-      margin-top: 25px;
-      gap: 70px;
-      cursor: pointer;
-  }
-  li:hover{
-    border-bottom: 2px solid #FDD500;
+    display: none;
+}
+.menu_icon{
+  display: none;
+}
+.nav_img{
+    margin: 10px;
+}
+nav ul li{
+ font-family: 'Inconsolata';
+ font-size: 15px;
+ border: none;
+ border-radius: 20px;
+ font-weight: 600;
+ 
+ padding: 7px 20px 7px 20px;
+ letter-spacing: 1px;
+ cursor: pointer;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover{
+  border-bottom: 1px solid #FDD500;
+}
+.options_icon{
+  display: none;
+}
+.menu_icon{
+display: none;
+}
+.nav_img{
+  margin: 10px;
+  cursor: pointer;
+  width: 20px;
+}
+
+nav ul{
+  font-weight: 600;
+  font-size: large;
+  list-style: none; 
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding-right: 50px;
+  margin-top: 25px;
+  gap: 30px;
+  cursor: pointer;
+
+}
+li:hover{
+background-color: #F2E8C9;
 }
   nav button{
     font-family: 'Inconsolata';
@@ -245,7 +277,7 @@ button:hover
   height: 400px;
   background-color: #FCF4DD;
   
-  border-radius: 20px Opx 0px 20px;
+  border-radius: 20px 0px 0px 20px;
 
   display: flex;
   flex-direction: column;
@@ -253,6 +285,7 @@ button:hover
   justify-content: space-around;
   gap: 5px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .card1
@@ -266,6 +299,7 @@ button:hover
   justify-content: center;
   align-items: center;
   gap: 50px;
+  padding-bottom: 20px;
 }
 .textleft
 { 

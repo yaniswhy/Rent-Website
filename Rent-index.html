@@ -55,9 +55,16 @@
     </section>
     
       
-      <div class="payment-overlay">
-        <!-- open overlay to pay -->
+      <div class="error-overlay">
+        <div class="error">
+            <img src="./pictures/warning.png" alt="warning">
+            <div class="warningtext">
+            <h2>Sorry an error occured</h2>
+            <p>This feature is not available yet!</p>
+            </div>
+        </div>
       </div>
+
       <div class="additem-overlay overlay">
         <div class="overlay-content">
           
@@ -70,12 +77,12 @@
 
             <div class="left">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name"  placeholder="Item's name" required><br>
+                <input type="text" id="name" name="name" placeholder="Item's name" required><br>
                 
                 <div class="pricing">
                     <div> <label for="price">Price:</label>
                       
-                        <input class="price" type="number" id="price" name="price"  placeholder="Price in Algerian dinar" required><br>
+                        <input class="price" type="number" id="price" name="price" placeholder="Price in Algerian dinar" required><br>
                         </div>
                         <div>
                     <label for="category">Category:</label>
@@ -84,7 +91,7 @@
                     <option value="Daily">Daily</option>
                     <option value="Weekly">Weekly</option>
                     </select>
-                        </div>
+                    </div>
                    
                 </div>
                 
@@ -172,6 +179,7 @@
                                     <label for="fulldescription">Description : </label>
                                     <p>Very good car, barely used. Honest price. Very good car, barely used. Honest price. Very good car, barely used. Honest price. Very good car, barely used. Honest price.</p>
                                 </div>
+                                <button class="btnerror">Rent</button>
                         </div>
                     </div>
                     </div>

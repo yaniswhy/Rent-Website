@@ -6,6 +6,7 @@
     <link rel="icon" type="image/x-icon" href="./pictures/Favicon.png">
     <link rel="stylesheet" href="form-style.css">
     <link rel="stylesheet" href="style-sidebar.css">
+    <link rel="stylesheet" href="overlays-style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -51,7 +52,17 @@
             <p>© Copyrights 2024</p>
         </div>
     </section>
-    
+
+    <div class="error-overlay">
+        <div class="error">
+            <img src="./pictures/warning.png" alt="warning">
+            <div class="warningtext">
+            <h2>Sorry an error occured</h2>
+            <p>This feature is not available yet!</p>
+            </div>
+        </div>
+      </div>
+
     <section>
     <div class="Large">
         <div class="formcont">
@@ -66,7 +77,7 @@
                     <textarea id="message" name="message" required placeholder="Your Message"></textarea><br><br>
                     
                 </div>
-               <button type="submit">Submit</button>
+               <button class="btnerror" type="submit">Submit</button>
             </form>
             
         </div>
@@ -83,5 +94,6 @@
     
     <script src="Home-script.js"></script>
     <script src="home.js"></script>
+    <script src="overlays.js"></script>
 </body>
 </html>

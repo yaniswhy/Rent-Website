@@ -6,12 +6,14 @@ function closeOverlay() {
   document.querySelector(".additem-overlay.overlay").style.display = "none";  
 }
 
+
 document.getElementById('add-item-button').addEventListener('click', function(event) {
   event.preventDefault();
 
   var name = document.getElementById('name').value;
   var price = document.getElementById('price').value;
   var category2 = document.getElementById('category2').value;
+  var category = document.getElementById('category').value;
   var file = document.getElementById('file').files[0];
   var shortDescription = document.getElementById('short-description').value;
   var place = document.getElementById('place').value;
@@ -76,26 +78,38 @@ document.getElementById('add-item-button').addEventListener('click', function(ev
       </div>
       <div class="info">
           <div class="main-info">
-              <h3>${name}</h3>
-              <h3>${price}</h3>
+              <div class = "headr">
+              <h3>${name}</h3> 
+              <div class="price" ><h4>${price}</h4></div>
+              </div>
+              
+              <div class="two">
+              <div class="cat">
+              <label for="place">Category :</label>
+              <p>${category}</p>
+              </div>
+              
               <div class="place">
                   <label for="place">Place :</label>
                   <p>${place}</p>
               </div>
+              </div>
           </div>
           <div class="Description">
-              <label for="fulldescription">Description :</label>
+              <label for="shortdescription"> Short Description :</label>
+              <p>${shortDescription}</p>
+          </div>
+          <div class="Description">
+              <label for="fulldescription"> Full Description :</label>
               <p>${fullDescription}</p>
           </div>
+          <button class="btnerror">Rent</button>
       </div>
   `;
 
   itemDiv.appendChild(specialOverlayDiv2);
-
-  // Append the item to the container
   document.querySelector('.item-container').appendChild(itemDiv);
 
-  // Reset input values
   document.getElementById('name').value = '';
   document.getElementById('price').value = '';
   document.getElementById('place').value = '';
@@ -107,16 +121,30 @@ document.getElementById('add-item-button').addEventListener('click', function(ev
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Attach click event listener to the document
+
   document.addEventListener('click', function(event) {
-      // Check if the clicked element is an item
-      const item = event.target.closest('.item');
-      if (item) {
-          // Toggle 'active' class on the special overlay
-          const specialOverlay = item.querySelector('.special-overlay2');
-          const specialOverlay2 = item.querySelector('.special-overlay');
-          specialOverlay.classList.toggle('active');
-          specialOverlay2.classList.toggle('active');
+      const btnError = event.target.closest('.btnerror');
+      if (btnError) {
+        event.preventDefault();
+          const errorOverlay = document.querySelector('.error-overlay');
+          errorOverlay.classList.toggle('activeR');
+          setTimeout(function() {
+            errorOverlay.classList.remove('activeR');
+          }, 4000);
       }
   });
 });
+  
+  
+document.addEventListener("DOMContentLoaded", function() {
+
+    document.addEventListener('click', function(event) {
+        const item = event.target.closest('.item');
+        if (item) {
+            const specialOverlay = item.querySelector('.special-overlay2');
+            const specialOverlay2 = item.querySelector('.special-overlay');
+            specialOverlay.classList.toggle('active');
+            specialOverlay2.classList.toggle('active');
+        }
+    });
+  });

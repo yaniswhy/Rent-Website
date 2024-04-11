@@ -41,35 +41,48 @@
     display: flex;
     flex-direction: column;
   }
-  @media (min-width: 767px) { 
-  #addItemForm
-  {
-    margin-top: 35px;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;}
 
-    .overlay-content {
-      background-color: #FCF4DD;
-      padding: 20px;
-      border-radius: 10px;
-      width: fit-content;
-      height: fit-content;
-      max-width: 95%;
-      max-height: 95%;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      margin-left: 25%;
-      margin-right: 25%;
-      overflow:auto;
-  
-      display: flex;
-      flex-direction: column;
-      
-      
-    }
+  .error-overlay
+  {
+    position: fixed;
+    top: 25px;
+    right: -500px;
+    z-index: 1;
+    transition: right 0.5s ease;
   }
-    
+  
+  .error-overlay.activeR
+  {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    z-index: 1;
+  }
+  .error-overlay img
+  {
+    width: 85px;
+  }
+  .error-overlay .error
+  {
+    max-width: fit-content;
+    align-items: center;
+    height: 85px;
+    background-color: #FF002E;
+    position: static;
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    z-index: 3;
+  }
+  .error-overlay .error .warningtext
+  {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px;
+    z-index: 3;
+  }
   
   input
 {
@@ -181,3 +194,31 @@ textarea
     padding-right: 10px;
     padding-left: 10px;
 }
+@media (min-width: 767px) { 
+  #addItemForm
+  {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;}
+
+    .overlay-content {
+      background-color: #FCF4DD;
+      padding: 20px;
+      border-radius: 10px;
+      width: fit-content;
+      height: fit-content;
+      max-width: 95%;
+      max-height: 95%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 25%;
+      margin-right: 25%;
+      overflow:auto;
+  
+      display: flex;
+      flex-direction: column;
+      
+      
+    } 
+  }
