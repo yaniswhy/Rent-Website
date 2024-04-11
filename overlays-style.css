@@ -55,7 +55,7 @@
   {
     position: fixed;
     top: 25px;
-    right:  10px;
+    right:  0px;
     z-index: 1;
   }
   .error-overlay img
@@ -221,4 +221,12 @@ textarea
       
       
     } 
+
+    .error-overlay.activeR
+    {
+      position: fixed;
+      top: 25px;
+      right:  20px;
+      z-index: 1;
+    }
   }
