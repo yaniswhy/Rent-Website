@@ -24,7 +24,7 @@ nav{
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
-  z-index: 1;
+  
 }
 .nav_img{
   margin-left: 10%;
